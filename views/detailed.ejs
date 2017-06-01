@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+<div class="row">
+  <div class="six colums wrapperdetailed">
+  <h3 class="movietitle"><%= detaileddata["Title"] %></h3>
+  <div class="six colums">
+    <div class="detailedmovie">
+      <div class="row">
+        <div class="four columns posterwrapper"><img class="posterdetailed" src="<%= detaileddata["Poster"] %>"></div>
+        <div class="eight columns info">
+          <h3> IMDb Score: <%= detaileddata["Ratings"][0]["Value"] %></h3>
+        </div>
+        <div class="eight columns info">
+          <p class="detailedmoviedata">
+          <strong>Year:</strong> <%= detaileddata["Year"] %> <br>
+          <strong>Rated:</strong> <%= detaileddata["Rated"] %> <br>
+          <strong>Released:</strong> <%= detaileddata["Released"] %> <br>
+          <strong>Runtime:</strong> <%= detaileddata["Runtime"] %> <br>
+          <strong>Genre:</strong> <%= detaileddata["Genre"] %> <br>
+          <strong>Director:</strong> <%= detaileddata["Director"] %> <br>
+          <strong>Writer:</strong> <%= detaileddata["Writer"] %> <br>
+          <strong>Actors:</strong> <%= detaileddata["Actors"] %> <br>
+          <strong>Awards:</strong> <%= detaileddata["Awards"] %> <br>
+          </p>
+        </div>
+        <div class="eight columns backbtndiv">
+          <a class="button button-primary backbtn" href="results/?s=<%=search%>">Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<% include partials/footer %>

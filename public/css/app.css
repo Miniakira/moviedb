@@ -1,0 +1,91 @@
+body {
+  background-color: #00363a;
+}
+
+.wrapper {
+  background-color: #006064;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.wrapperdetailed {
+  background-color: #006064;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.inputText {
+  font-size: 16px;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.movietitle {
+  text-align: center;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+form {
+  font-size: 2vw;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.backbtn {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.backbtndiv {
+  float: right;
+}
+
+.submitbtn {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.movie {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.detailedmovie {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.poster {
+  height: 14vh;
+  border-radius: 5px;
+}
+
+.posterdetailed {
+  width: 24vw;
+  max-width: 288px;
+  border-radius: 5px;
+}
+
+.detailedmoviedata {
+  line-height: 190%;
+}

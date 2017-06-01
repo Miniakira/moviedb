@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+<div class="row">
+  <div class="six colums wrapper">
+    <h1 class="header">RESULTS</h1>
+        <% if (data["Response"] == "False"){ %>
+          <h1 class="header">Sorry no reults!</h1>
+        <% } else { %>
+        <% data["Search"].forEach(function(movie) { %>
+            <div class="movie">
+            <div class="row">
+
+              <div class="imagewrapper three columns">
+              <% var poster = movie["Poster"] %>
+              <% if (poster == "N/A") { %>
+                <img class="poster" src="/images/harold.jpg">
+              <% } else { %>
+                <img class="poster" src="<%= movie["Poster"] %>">
+              <% } %>
+              </div>
+
+              <div class="seven columns">
+              <h3><strong><%= movie["Title"] %></strong></h3>
+              <p><%= movie["Year"] %></p>
+              <a href="/detailed/<%= movie['imdbID'] %>">More info</a>
+              </div>
+
+              </div>
+            </div>
+        <% }); %>
+        <% }; %>
+    <a class="button button-primary backbtn" href="/">Back</a>
+  </div>
+</div>
+
+<% include partials/footer %>
